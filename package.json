@@ -1,0 +1,51 @@
+{
+  "name": "frodo",
+  "version": "3.0.0",
+  "description": "",
+  "main": "./src/index.js",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "start-uc": "node ./src/index.js --update-commands",
+    "start-rc": "node ./src/index.js --reset-commands",
+    "build": "yarn && tsc",
+    "build-w": "tsc -w",
+    "cc": "sh ./tools/createCommand.sh",
+    "cf": "sh ./tools/rewriteCommandFile.sh"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/rest": "^0.1.0-canary.0",
+    "@top-gg/sdk": "^3.1.2",
+    "aki-api": "^6.0.7",
+    "atob": "^2.1.2",
+    "btoa": "^1.2.1",
+    "chalk": "^5.0.0",
+    "discord-api-types": "^0.26.1",
+    "discord.js": "^13.5.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "firebase": "^9.1.3",
+    "moment": "^2.29.1",
+    "moment-duration-format": "^2.3.2",
+    "node-fetch": "^3.1.0",
+    "nodemailer": "^6.7.2",
+    "topgg-autoposter": "^2.0.0",
+    "ws": "^8.2.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/node": "^15.0.2",
+    "@types/nodemailer": "^6.4.4",
+    "@typescript-eslint/eslint-plugin": "^4.22.1",
+    "@typescript-eslint/parser": "^4.22.1",
+    "eslint": "^7.32.0",
+    "eslint-config-google": "^0.14.0",
+    "typescript": "^4.5.4"
+  },
+  "engines": {
+    "node": ">=16.7.0"
+  },
+  "type": "module"
+}
